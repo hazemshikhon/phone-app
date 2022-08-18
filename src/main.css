@@ -1,0 +1,15 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.userCard{
+    border:1px solid gray;
+    margin-bottom: 20px;
+}
+.userCard ul {
+    list-style: none;
+    margin: 10px;
+}
+.userCard li {
+    margin-bottom: 5px;
+}
