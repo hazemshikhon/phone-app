@@ -1,4 +1,6 @@
-const UserCard = ({ele}) =>{
+import styles from './userCard.css';
+
+const UserCard = ({ele,removeUser}) =>{
     return(
         <div className="userCard">
         <ul>
@@ -12,6 +14,11 @@ const UserCard = ({ele}) =>{
             <span>Phome:</span>{ele.phone}
           </li>
         </ul>
+        <div className="delete" onClick={()=>{
+          removeUser(ele.id)
+        }}>
+          x
+        </div>
       </div>
     )
 }
